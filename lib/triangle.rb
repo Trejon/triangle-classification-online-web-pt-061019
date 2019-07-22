@@ -11,7 +11,7 @@ class Triangle
  
  def kind 
    if (negative? == true || valid? == false)
-     raise Triangle
+     raise TriangleError
  end
  
 end
