@@ -13,7 +13,8 @@ class Triangle
    if (negative? == true || valid? == false)
      raise TriangleError
      elsif(equilateral?)
-     equilateral
+     :equilateral
+     
  end
  
 end
