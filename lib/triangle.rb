@@ -44,3 +44,6 @@ def equilateral?
     (@side1 + @side2 > @side3) && (@side2 + @side3 > @side1) && (@side1 + @side3 > @side2)
   end
 end 
+class TriangleError < StandardError
+
+end
