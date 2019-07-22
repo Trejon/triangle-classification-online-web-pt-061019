@@ -9,44 +9,20 @@ class Triangle
    @sides = [side_one,side_two,side_three]
  end 
  
-  def kind
-    if(negative? == true || valid? == false)
+   def kind
+    if x == 0 || y == 0 || z == 0
       raise TriangleError
-    elsif(equilateral?)
-      :equilateral
-    elsif(scalene?)
-      :scalene
-    elsif(isosceles?)
-      :isosceles
+    elsif x + y <= z || x + z <= y || y + z <= x
+      raise TriangleError
+    elsif x == y && y == z
+      kind = :equilateral
+    elsif x == y && x != z || y == z && y != x || x == z && x != y
+      kind = :isosceles
+    else
+      kind = :scalene
     end
   end
-
-  def negative?
-    @sides.each do |length|
-      if(length <= 0)
-        return true
-      end
-    end
-  end
-
-  def equilateral?
-    (@side1 == @side2) && (@side1 == @side3)
-  end
-
-  def scalene?
-    (@side1 != @side2) && (@side1!= @side3) && (@side2 != @side3)
-  end
-
-  def isosceles?
-    (@side2 == @side3) || (@side1 == @side2) || (@side1 = @side3)
-  end
-
-  def valid?
-    (@side1 + @side2 > @side3) && (@side2 + @side3 > @side1) && (@side1 + @side3 > @side2)
-  end
-
 end
 
 class TriangleError < StandardError
-
 end
