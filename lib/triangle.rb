@@ -21,7 +21,8 @@ class Triangle
    end 
  end
  
- def negative
+ def negative?
+   @sides.each do {|length| 
    
  end 
  
