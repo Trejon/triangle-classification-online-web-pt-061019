@@ -14,7 +14,11 @@ class Triangle
      raise TriangleError
      elsif(equilateral?)
      :equilateral
-     
+     elsif(isosceles?)
+     :isosceles
+     elsif(scalene)
+     :scalene
+   end 
  end
  
 end
