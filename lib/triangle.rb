@@ -1,14 +1,13 @@
 class Triangle
- attr_accessor :side_one, :side_two, :side_three
- @sides = [] 
- 
- def initialize(side_one,side_two,side_three)
-   @side_one = side_one
-   @side_two = side_two
-   @side_three = side_three
-   @sides = [side_one,side_two,side_three]
- end 
- 
+  # write code here
+
+  def initialize(side_a, side_b, side_c)
+    @side_a = side_a
+    @side_b = side_b
+    @side_c = side_c
+
+  end
+
   def valid_triange
     if @side_a + @side_b <= @side_c || @side_a + @side_c <= @side_b || @side_b + @side_c <= @side_a || @side_a <= 0 || @side_b <= 0 || @side_c <= 0
       return false
@@ -32,5 +31,7 @@ class Triangle
   end
 
 class TriangleError < StandardError
+
+end
 
 end
