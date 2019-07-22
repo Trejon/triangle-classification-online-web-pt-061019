@@ -26,7 +26,6 @@ class Triangle
     if(length <= 0) return true 
     end  
   end 
-end
 
 def equilateral?
     (@side1 == @side2) && (@side1 == @side3)
