@@ -6,7 +6,7 @@ class Triangle
    @side_one = side_one
    @side_two = side_two
    @side_three = side_three
-   @sides = []
+   @sides = [side_one,side_two,side_three]
  end 
  
  
