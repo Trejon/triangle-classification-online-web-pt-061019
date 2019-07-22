@@ -21,4 +21,8 @@ class Triangle
    end 
  end
  
+ def negative
+   
+ end 
+ 
 end
