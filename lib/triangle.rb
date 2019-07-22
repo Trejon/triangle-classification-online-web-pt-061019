@@ -20,12 +20,12 @@ class Triangle
     if self.valid_triange == false
       raise TriangleError
     elsif
-      @side_a == @side_b && @side_b == @side_c
+      @side_one == @side_two && @side_two == @side_three
         :equilateral
-      elsif @side_a == @side_b || @side_a == @side_c || @side_b == @side_c
+      elsif @side_one == @side_two || @side_one == @side_three || @side_two == @side_three
         :isosceles
       elsif
-      @side_a != @side_b && @side_a != @side_c && @side_b != @side_c
+      @side_one != @side_two && @side_one != @side_three && @side_two != @side_three
       :scalene
     end
   end
