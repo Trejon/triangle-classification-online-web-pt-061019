@@ -11,6 +11,7 @@ class Triangle
  
  def kind 
    if (negative? == true || valid? == false)
+     raise Triangle
  end
  
 end
