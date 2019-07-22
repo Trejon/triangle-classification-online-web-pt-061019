@@ -9,7 +9,7 @@ class Triangle
   end
 
   def valid_triange
-    if @side_a + @side_b <= @side_c || @side_a + @side_c <= @side_b || @side_b + @side_c <= @side_a || @side_a <= 0 || @side_b <= 0 || @side_c <= 0
+    if @side_one + @side_two <= @side_three || @side_one + @side_three <= @side_two || @side_two + @side_three <= @side_one || @side_one <= 0 || @side_two <= 0 || @side_three <= 0
       return false
     else
       return true
