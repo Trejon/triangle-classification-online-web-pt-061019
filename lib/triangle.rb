@@ -10,7 +10,7 @@ class Triangle
  end 
  
  def kind 
-   if (negative? == true ||)
+   if (negative? == true || valid? == false)
  end
  
 end
