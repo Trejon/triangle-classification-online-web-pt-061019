@@ -1,10 +1,10 @@
 class Triangle
   # write code here
 
-  def initialize(side_a, side_b, side_c)
-    @side_a = side_a
-    @side_b = side_b
-    @side_c = side_c
+  def initialize(side_one, side_two, side_three)
+    @side_one = side_one
+    @side_two = side_two
+    @side_three = side_three
 
   end
 
@@ -16,7 +16,7 @@ class Triangle
     end
   end
 
-  def kind()
+  def kind
     if self.valid_triange == false
       raise TriangleError
     elsif
